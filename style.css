@@ -1,5 +1,7 @@
 html { 
 	font-size: 75%; // 12px 
+	height: 100%;
+	width: 100%;
 }
 /*@media only screen and (max-device-width: 700px) {
 	html { font-size: 50%; // 8px }
