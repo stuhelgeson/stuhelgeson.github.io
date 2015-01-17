@@ -1,13 +1,14 @@
-html { 
+html{ 
 	font-size: 75%; // 12px 
-	height: 100%;
-	width: 100%;
 }
 /*@media only screen and (max-device-width: 700px) {
 	html { font-size: 50%; // 8px }
 
 }*/
 
+html,body{
+	min-height: 100%;
+}
 
 body{
 	left: 0;
@@ -15,9 +16,7 @@ body{
 	overflow: hidden;
 	position: relative;
 	font-family: 'Roboto Condensed', sans-serif;
-	height: 100%;
-	width: 100%;
-	background: url("../backDrop.gif") no-repeat center center fixed; 
+	background: url("../backDrop.gif") no-repeat center center; 
 	background-size: 100% 100%;
   	/*-webkit-background-size: cover;
   	-moz-background-size: cover;
