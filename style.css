@@ -29,12 +29,13 @@ html, body{
 }
 
 .header{
-	height: 20%;
+	height: 18%;
 	width: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
 	color: rgb(0,33,87);
 	background: rgba(200,203,206,.9);
+	border-bottom: none 2%;
 	
 }
 
