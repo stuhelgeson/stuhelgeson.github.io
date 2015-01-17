@@ -34,6 +34,7 @@ html, body{
 	margin-top: 0;
 	margin-bottom: 0;
 	color: rgb(0,33,87);
+	background: rgba(200,203,206,.9);
 	
 }
 
@@ -43,7 +44,7 @@ html, body{
 }
 
 .visible{
-	background-color: rgb(200,203,206);
+	background-color: rgba(200,203,206,.9);
 }
 .content{
 	width: 100%;
