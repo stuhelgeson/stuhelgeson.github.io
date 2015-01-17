@@ -18,7 +18,7 @@ html, body{
 	height: 100%;
 }
 .strip{
-	background: url("backDrop.gif");
+	background: url("background.jpg");
 	background-size: 100% 100%;
 	background-position: 50% 50%;
 	width: 100%;
@@ -48,9 +48,13 @@ html, body{
 .content{
 	width: 100%;
 	height: 70%;
-	margin-bottom: 0;
-	margin-bottom: 0;
+	margin: auto;
 	
+}
+
+.content p{
+	font-size: 4em;
+	text-align: center;
 }
 
 .content-left{
