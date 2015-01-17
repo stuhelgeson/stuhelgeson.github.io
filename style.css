@@ -55,6 +55,7 @@ html, body{
 .content p{
 	font-size: 4em;
 	text-align: center;
+	color: rgb(200,203,206);
 }
 
 .content-left{
