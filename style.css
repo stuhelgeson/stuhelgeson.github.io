@@ -68,7 +68,8 @@ body{
 	height: 100%;
 	margin-left: 4%;
 	margin-right: 6%;
-	float: left;
+	position: relative;
+	left: 0px;
 	text-align: right;
 	color: rgb(0,33,87);
 }
@@ -79,7 +80,8 @@ body{
 	height:100%;
 	margin-left: 2%;
 	margin-right: 3%;
-	float: right;
+	position: relative;
+	right: 0px;
 	text-align: center;
 	vertical-align: middle;
 }
