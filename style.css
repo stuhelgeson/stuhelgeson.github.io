@@ -29,13 +29,13 @@ html, body{
 }
 
 .header{
-	height: 18%;
+	height: 12%;
 	width: 100%;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 3%;
 	color: rgb(0,33,87);
-	background: rgba(200,203,206,.9);
-	border-bottom: 2% solid rgba(0,0,0,0);
+	background: rgba(255,255,255,.75);
+
 	
 }
 
@@ -45,7 +45,7 @@ html, body{
 }
 
 .visible{
-	background-color: rgba(200,203,206,.9);
+	background-color: rgba(255,255,255,.75);
 }
 .content{
 	width: 100%;
@@ -54,20 +54,26 @@ html, body{
 	
 }
 
-.content p{
+.home{
 	font-size: 4em;
 	text-align: center;
-	color: rgb(200,203,206);
+	color: rgb(0,33,87);
+	vertical-align: middle;
 }
 
+.top{
+	margin-top: 12%;
+}
+
+
 .content-left{
-	font-size: 4em;
+	font-size: 2em;
 	width: 40%;
 	height: 100%;
 	margin-left: 4%;
 	margin-right: 6%;
 	float: left;
-	text-align: right;
+	text-align: left;
 	color: rgb(0,33,87);
 }
 
@@ -90,6 +96,7 @@ html, body{
 .left{
 	font-size: 2em;
 	width: 47%;
+	height: 100%;
 	margin-left: 3%;
 	float: left;
 	vertical-align: middle;
@@ -101,6 +108,7 @@ html, body{
 .right{
 	font-size: 2em;
 	width: 47%;
+	height: 100%;
 	float: right;
 	margin-left: 0;
 	margin-right: 3%;
@@ -114,10 +122,10 @@ html, body{
 	background: url("menuBG.gif");
 	background-size: cover;
 	background-position: 0 30px; 
-	left: -285px; /*starts off screen*/
+	left: -185px; /*starts off screen*/
 	height: 100%;
 	position: fixed;
-	width: 285px;
+	width: 185px;
 	-moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
@@ -143,6 +151,12 @@ padding-top: 10px;
 	text-transform: uppercase;
 }
 
+.header .right a{
+	color: rgb(0,33,87);
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
 .icon-close{
 	font-size: 2em;
 	color: rgb(200,203,206);
@@ -234,7 +248,7 @@ padding-top: 10px;
 }
 
 .slider-dots li.active-dot {
-  color: #363636;
+  color: rgb(174,0,0);
 }
 
 .menuBars{
@@ -332,13 +346,21 @@ padding-top: 10px;
 	text-decoration: none;
 }
 
-.text{
+.text p{
 	float: left;
 	margin-left: 3%;
 	width: 40%;
 	height: 100%;
 	color: rgb(0,33,87);
 	font-size: 1.75em;
+	text-align: left;
+}
+
+.text h3{
+	font-size: 2em;
+	margin-left: 3%;
+	color: rgb(0,33,87);
+	text-align: left;
 }
 
 .link {
