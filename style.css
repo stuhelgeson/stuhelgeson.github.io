@@ -35,7 +35,7 @@ html, body{
 	margin-bottom: 0;
 	color: rgb(0,33,87);
 	background: rgba(200,203,206,.9);
-	border-bottom: none 2%;
+	border-bottom: 2% solid rgba(0,0,0,0);
 	
 }
 
