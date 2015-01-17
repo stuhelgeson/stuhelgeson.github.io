@@ -69,17 +69,15 @@ body{
 	float: left;
 	text-align: right;
 	color: rgb(0,33,87);
-	display: inline-block;
 }
 
 .content-right{
 	font-size: 2em;
 	width: 40%;
 	height:100%;
-	margin-left: 50%;
+	margin-left: 40%;
 	text-align: center;
 	vertical-align: middle;
-	display: inline-block;
 }
 
 .footer{
