@@ -37,7 +37,7 @@ var main=function(){
 
 	$('.contact-close').click(function(){
 		$('.contact-page').animate({
-			bottom: '-100%'
+			bottom: '-30%'
 		},200);
 	});
 
