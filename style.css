@@ -55,9 +55,10 @@ html, body{
 }
 
 .home{
-	font-size: 4em;
+	font-size: 5em;
 	text-align: center;
-	color: rgb(0,33,87);
+	/*color: rgb(0,33,87);*/
+	color: rgb(200,203,206);
 	vertical-align: middle;
 }
 
@@ -67,23 +68,22 @@ html, body{
 
 
 .content-left{
-	font-size: 2em;
-	width: 40%;
+	font-size: 1.75em;
+	width: 50%;
 	height: 100%;
 	margin-left: 4%;
-	margin-right: 6%;
+	margin-right: 0;
 	float: left;
 	text-align: left;
 	color: rgb(0,33,87);
 }
 
 .content-right{
-	font-size: 2em;
-	width: 45%;
+	width: 42%;
 	height:100%;
-	margin-left: 2%;
+	margin-left: 0;
 	margin-right: 3%;
-	float: left;
+	float: right;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -195,18 +195,17 @@ padding-top: 10px;
 .img-about{
 	height: 100%;
 	width: 100%;
-	background: url("about.jpg");
-	background-size: auto;
+	background: url("about.jpg") no-repeat;
+	background-size: auto 100%;
 	background-position: 50% 50%;
 	position: relative;
-	top: 1em;
 	margin-left: 10%;
 }
 
 .slide{
 	display: none;
 	height: 70%;
-	position: absolute;
+	position: absolute; 
 	overflow: hidden;
 }
 
@@ -349,10 +348,11 @@ padding-top: 10px;
 .text p{
 	float: left;
 	margin-left: 3%;
+	margin-right: 0;
 	width: 40%;
 	height: 100%;
 	color: rgb(0,33,87);
-	font-size: 1.75em;
+	font-size: 1.6em;
 	text-align: left;
 }
 
@@ -370,15 +370,20 @@ padding-top: 10px;
 .media{
 	float: right;
 	margin-right: 3%;
+	margin-left: 0;
 	width: 50%;
 	height: 100%;
 }
 
 .media iframe{
 	position: relative;
-  	top: 50%;
+  	top: 30%;
   	transform: translateY(-50%);
   	margin-left: auto;
   	margin-right: auto;
-  	display: block;
+  	/*display: block;*/
+}
+
+.smaller-text{
+	font-size: 1.5em;
 }
