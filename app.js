@@ -69,6 +69,29 @@ var main=function(){
         $(currentDot).removeClass('active-dot');
         $(prevDot).addClass('active-dot');
     });
+
+    $('.right-arrow-one').click(function(){
+        var currentSlide = $('.active-picture');
+        var nextSlide = currentSlide.next();
+        if(nextSlide.length==0){
+            nextSlide = $('.picture-one').first();
+        }
+        $(currentSlide).fadeOut(300).removeClass('active-picture');
+        $(nextSlide).fadeIn(300).addClass('active-picture');
+    });
+    // $('.left-arrow').click(function(){
+    //     var currentSlide = $('.active-picture');
+    //     var nextSlide = currentSlide.prev();
+    //     if(nextSlide.length==0){
+    //         nextSlide = $('.picture').last();
+    //     }
+    //     $(currentSlide).fadeOut(300).removeClass('active-picture');
+    //     $(nextSlide).fadeIn(300).addClass('active-picture');
+    // });
+	$('.right-arrow-two').click(function(){
+        $('.picFour').toggle();
+        $('.picFive').toggle();
+    });
 };
 
 $(document).ready(main);
