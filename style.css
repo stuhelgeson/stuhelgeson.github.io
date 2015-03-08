@@ -374,6 +374,7 @@ padding-top: 10px;
 
 .text h3{
 	width: 50%;
+	height: 100%;
 	font-size: 2em;
 	margin-left: 3%;
 	color: rgb(0,33,87);
@@ -402,9 +403,6 @@ iframe{
   	/*display: block;*/
 }
 
-.smaller-text{
-	font-size: 1.5em;
-}
 
 /*.left-arrow{
 	float: left;
@@ -474,6 +472,7 @@ iframe{
 	width: 100%;
 	background: url("speaker1.jpg");
 	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
 .picTwo{
@@ -481,6 +480,7 @@ iframe{
 	width: 100%;
 	background: url("speaker2.jpg");
 	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
 .picThree{
@@ -488,6 +488,7 @@ iframe{
 	width: 100%;
 	background: url("speaker3.jpg");
 	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
 .picFour{
@@ -497,6 +498,7 @@ iframe{
 	background-size: auto 100%;
 	background-position: 50% 50%;
 	display: block;
+	background-repeat: no-repeat;
 }
 
 .picFive{
@@ -506,4 +508,5 @@ iframe{
 	background-size: auto 100%;
 	background-position: 50% 50%;
 	display: none;
+	background-repeat: no-repeat;
 }
