@@ -1,97 +1,49 @@
 var main=function(){
-	$('.menu-click').click(function(){
-		$('.menu').animate({
-		left: '0px'
-		},200);
-		$('body').animate({
-		left: '185px'
-		},200);
-	});
-	$('.icon-close').click(function(){
-		$('.menu').animate({
-		left: '-185px'
-		},200);
-		$('body').animate({
-		left: '0px'
-		},200);
-	});
-
-	$('.contact-click2').click(function(){
-		$('.contact-page').animate({
-			bottom: '0px'
-		},200);
-	});
-
-	$('.contact-click1').click(function(){
-		$('.menu').animate({
-		left: '-185px'
-		},200);
-		$('body').animate({
-		left: '0px'
-		},200);
-
-		$('.contact-page').animate({
-			bottom: '0px'
-		},200);
-	});
-
-	$('.contact-close').click(function(){
-		$('.contact-page').animate({
-			bottom: '-30%'
-		},200);
-	});
-
-	$('.arrow-next').click(function(){
-        var currentSlide = $('.active-slide');
-        var nextSlide = currentSlide.next();
-        var currentDot = $('.active-dot');
-        var nextDot = currentDot.next();
-        if(nextSlide.length==0){
-            nextSlide = $('.slide').first();
-            nextDot = $('.dot').first();
-        }
-        $(currentSlide).fadeOut(300).removeClass('active-slide');
-        $(nextSlide).fadeIn(300).addClass('active-slide');
-        $(currentDot).removeClass('active-dot');
-        $(nextDot).addClass('active-dot');
-    });
-    $('.arrow-prev').click(function(){
-        var currentSlide = $('.active-slide');
-        var prevSlide = currentSlide.prev();
-        var currentDot = $('.active-dot');
-        var prevDot = currentDot.prev();
-        if(prevSlide.length==0){
-            prevSlide = $('.slide').last();
-            prevDot = $('.dot').last();
-        }
-        $(currentSlide).fadeOut(300).removeClass('active-slide');
-        $(prevSlide).fadeIn(300).addClass('active-slide');
-        $(currentDot).removeClass('active-dot');
-        $(prevDot).addClass('active-dot');
-    });
-
-    $('.right-arrow-one').click(function(){
-        var currentSlide = $('.active-picture');
-        var nextSlide = currentSlide.next();
-        if(nextSlide.length==0){
-            nextSlide = $('.picture-one').first();
-        }
-        $(currentSlide).fadeOut(300).removeClass('active-picture');
-        $(nextSlide).fadeIn(300).addClass('active-picture');
-    });
-    // $('.left-arrow').click(function(){
-    //     var currentSlide = $('.active-picture');
-    //     var nextSlide = currentSlide.prev();
-    //     if(nextSlide.length==0){
-    //         nextSlide = $('.picture').last();
-    //     }
-    //     $(currentSlide).fadeOut(300).removeClass('active-picture');
-    //     $(nextSlide).fadeIn(300).addClass('active-picture');
-    // });
-	$('.right-arrow-two').click(function(){
-        $('.picFour').toggle();
-        $('.picFive').toggle();
-    });
+        $('.fadeTwo').delay(1500).animate({
+             opacity: 1
+        }, 700);
+        $('.fadeOne').delay(2200).animate({
+             opacity: 1
+        }, 700);
+        $('.fadeThree').delay(2900).animate({
+             opacity: 1
+        }, 700);
+        $('.menu-click').click(function(){
+            var menuHeight = $('.wrapper').width();
+            if(menuHeight>=768){
+                $('.menu').animate({
+                    top: '0px'
+                },200);
+                $('.wrapper').animate({
+                top: '40px'
+                },200);
+            }else{
+                $('.menu').animate({
+                    top: '0px'
+                },200);
+                $('.wrapper').animate({
+                    top: '275px'
+                },200);
+            }
+        });
+        $('.close-click').click(function(){
+            var menuHeight = $('.wrapper').width();
+            if(menuHeight>=768){
+                $('.menu').animate({
+                    top: '-275px'
+                },200);
+                $('.wrapper').animate({
+                    top: '0px'
+                },200);
+            }else{
+                $('.menu').animate({
+                    top: '-275px'
+                },200);
+                $('.wrapper').animate({
+                    top: '0px'
+                },200);
+            }
+        });
 };
 
 $(document).ready(main);

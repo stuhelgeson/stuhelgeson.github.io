@@ -1,70 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link href='style.css' rel='stylesheet'>
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-		<title>Stu Helgeson</title>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'> -->
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-	<body>
-		
-		<div class="menu">	
-			<div class="icon-close">
-				CLOSE<div></div>
-			</div>
-			<ul class = "list">
-				<li><a href="index.html" class="hover">Home</a><li>
-				<li><a href="about.html" class="hover">About</a><li>
-				<li><a href="projects.html" class="hover">Projects</a><li>
-				<li><a href="#" class="hover contact-click1">Contact</a><li>
-				<li><a href="StuHelgesonResume.pdf" target="_blank" class="hover">Resume</a><li>
-			</ul>
-		</div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-		<div class="contact-page">
-			<div class="contact-close hover"><div></div>CLOSE</div>
-			<div class="contact-content">
-			<p class="one">LET'S TALK!</p>
-			<p class="two"><a href="mailto:helgesonse@gmail.com?subject=STU HELGESON.COM INQUIRY" target="_blank">EMAIL</a></p>
-			<p class="two">PHONE: <a href="tel:717-371-8396">717-371-8396</a><p>
-			</div>
-		</div>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-		
-			<div class="strip">
-				<div class="header">
-					<div class="left">
-						<div class="menuBars menu-click"></div><p class="menu-click hover">MENU</p><p class="contact hover contact-click2">CONTACT</p>
-					</div>
-					<div class="right">
-						<p><a href="index.html">STU HELGESON</a></p>
-					</div>
-				</div>
-				
-				
-					<div class="content visible">
-						<div class="content-left">
-							<!-- <p class="title">ABOUT</p> -->
-							<h3>ABOUT</h3>
-							<p>Welcome to my place on the web. I am a Junior at the University of Pennsylvania studying Mechanical Engineering & Applied Mechanics (MEAM). I want to design and create consumer products that improve and impact peoples’ lives. Aside from school, I enjoy sports and being active. I play sprint football here at Penn, where I am a captain of the team.</p>
-							<p>I have always had a passion for building and creating new things. Most recently I taught myself web design, with this website being the fruit of my labor.  In this website you can see some of the work I have done thus far. If you have any questions or have any job opportunities feel free to contact me.</p>
-						</div>
-						<div class="content-right">
-							<div class="img-about"></div>
-						</div>
-					</div>
-				
-				
-			</div>	
-			
+  </head>
 
+  <body>
 
+      <div class="container-fluid menu">
+        <div class="row menuRow">
+          <div class="col-sm-2 close-click border">
+            <h3>CLOSE</h3>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="index.html"><h3>HOME</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="about.html"><h3>ABOUT</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="projects.html"><h3>PROJECTS</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="StuHelgesonResume.pdf" target="_blank" class="hover"><h3>RESUME</h3></a>
+          </div>
+          <div class="col-sm-2 navLink">
+            <a href="contact.html"><h3>CONTACT</h3></a>
+          </div>
+        </div>
+      </div>
 
-	<!--JavaScript, JQuery-->
-		<script src="jquery-1.10.2.min.js"></script>
-	    <script src="app.js"></script>
-		
-	</body>
-</html>
+  	 <div class="wrapper">
+
+      <div class="container-fluid">
+        <div class="row menuIcon menu-click">
+          <div class="col-sm-12">
+            <img src="menuIcon.png" height="35px" width="35px">
+          </div>
+        </div>
+       </div> 
+
+      <div class="container-fluid about">
+        
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <h3>ABOUT</h3>
+              <p>Welcome to my place on the web. I am a Junior at the University of Pennsylvania studying Mechanical Engineering & Applied Mechanics (MEAM). I want to design and create consumer products that improve and impact peoples' lives. Aside from school, I enjoy sports and being active. I play sprint football here at Penn, where I am a captain of the team.</p>
+              <p>I have always had a passion for building and creating new things. Most recently I taught myself web design, with this website being the fruit of my labor.  In this website you can see some of the work I have done thus far. If you have any questions or have any job opportunities feel free to contact me.</p>
+          </div>
+          <div class="col-sm-5">
+            <img src="about.jpeg" width="75%">
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row secondR">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <h3>Skills</h3>
+            <ul>
+              <li>Solid Modelling: SolidWorks, Inventor</li>
+              <li>Rapid Prototyping</li>
+              <li>Laser Cutting</li>
+              <li>3D Printing</li>
+              <li>Machining</li>
+              <li>Adobe CS</li>
+              <li>MatLab</li>
+              <li>Web Design: HTML CSS JavaScript JQuery Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h3>Interest</h3>
+            <ul>
+              <li>Football</li>
+              <li>Hiking</li>
+              <li>Camping</li>
+            </ul>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <div class="row secondR">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <img src="helgesonTackleVsNavy (2).jpg" width="100%">
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+
+      <div class="container-fluid bottom">
+       <!--
+        <div class="row connect">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-1">
+            <h4>CONNECT</h4>
+          </div>
+          <div class="col-sm-1">
+            <img src="linkIn.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-1">
+            <img src="youtube.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-1">
+            <img src="facebook.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-4"></div>
+        </div>-->
+        
+
+        <div class="row watermark">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 border">
+            <h4>&copy 2015 STU HELGESON   |   ALL RIGHTS RESERVED</h4>
+          </div>
+          <div class="col-lg-4">
+            <h4>WEBSITE DESIGNED AND DEVELOPED BY STU HELGESON</h4>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div> 
+
+    </div>
+    <!--JavaScript, JQuery-->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+ </html>

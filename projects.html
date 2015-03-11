@@ -1,155 +1,109 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link href='style.css' rel='stylesheet'>
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-		<title>Stu Helgeson</title>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'> -->
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-	<body>
-		
-		<div class="menu">	
-			<div class="icon-close">
-				CLOSE<div></div>
-			</div>
-			<ul class = "list">
-				<li><a href="index.html" class="hover">Home</a><li>
-				<li><a href="about.html" class="hover">About</a><li>
-				<li><a href="projects.html" class="hover">Projects</a><li>
-				<li><a href="#" class="hover contact-click1">Contact</a><li>
-				<li><a href="StuHelgesonResume.pdf" target="_blank" class="hover">Resume</a><li>
-			</ul>
-		</div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-		<div class="contact-page">
-			<div class="contact-close hover"><div></div>CLOSE</div>
-			<div class="contact-content">
-				<p class="one">LET'S TALK!</p>
-				<p class="two"><a href="mailto:helgesonse@gmail.com?subject=STU HELGESON.COM INQUIRY" target="_blank">EMAIL</a></p>
-				<p class="two">PHONE: <a href="tel:717-371-8396">717-371-8396</a><p>
-			</div>
-		</div>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-		
-		<div class="strip">
-			<div class="header">
-				<div class="left">
-					<div class="menuBars menu-click"></div><p class="menu-click hover">MENU</p><p class="contact hover contact-click2">CONTACT</p>
-				</div>
-				<div class="right">
-					<p><a href="index.html">STU HELGESON</a></p>
-				</div>
-			</div>
-			
-			
-			<div class="content visible">
-				<div class="slide active-slide">
-					<div class="text">
-						<h3>Wee Wee Pad Dispenser</h3>
-						<p>	Given the details of the device in the <a href="http://www.google.com/patents/US8464662" target="_blank" class="link">patent</a>, I had to design and build a working prototype to demonstrate the fesability of an automated house breaking pad dispensor. The project started with brainstorming ideas on a piece of paper, and grew into the fabrication of a functioning prototype. Along the way I learned a ton, from figuring out what a microcontroller is to building molds and working with composites. It was by no means easy but a challenge I would accept over and over.</p>
-					</div>
-					<div class="media">
-						<iframe width="100%" height="80%" src="http://www.youtube-nocookie.com/embed/T2Rcs5-17hY?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
+  </head>
 
-				<div class="slide">
-					<div class="text">
-						<h3>Robockey</h3>
-						<p>The final project in my <a href="https://alliance.seas.upenn.edu/~medesign/wiki/index.php/Courses/MEAM510" target="_blank" class="link">Mechatronics</a> class, consisted of building an autonomous team of hockey playing robots. My three teammates and I had three weeks to design, build, and code three robots to compete in the tournament. They were built entirely from scratch; the chassis was designed and built using 3D printing and laser cutting, the circuits were designed and soldered by hand, and the code was written from scratch. My main role on the team, was to handle the construction of all the circuitry. I also had a hand in the mechanical design of the bots. This was one of the hardest and most advanced projects I have ever been involved in. To the right you can see a beautiful example of all three robots coming together and working as designed.</p>
-					</div>
-					<div class="media">
-						<iframe width="100%" height="80%" src="http://www.youtube-nocookie.com/embed/lbmHQ8Fc2hY?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>	
-				</div>
+  <body>
 
-				<div class="slide">
-					<div class="text">
-						<h3>Sterling Engine</h3>
-						<p>In my Machine Design & Manufacturing class, you spend an entire semester machining a stirling heat engine. Every piece is machined out of aluminum, brass and steel using lathes and mills. You learn how to operate industrial machinery but more importantly you learn how things are manufactured. This gives you the ability to think how is this going to be built when you are designing something. On the right is me testing my engine I designed and built for the first time.</p>
-					</div>
-					<div class="media">
-						<iframe width="100%" height="80%" src="http://www.youtube-nocookie.com/embed/NE0V4o6Vpx8?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>	
-				</div>
+      <div class="container-fluid menu">
+        <div class="row menuRow">
+          <div class="col-sm-2 close-click border">
+            <h3>CLOSE</h3>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="index.html"><h3>HOME</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="about.html"><h3>ABOUT</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="projects.html"><h3>PROJECTS</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="StuHelgesonResume.pdf" target="_blank" class="hover"><h3>RESUME</h3></a>
+          </div>
+          <div class="col-sm-2 navLink">
+            <a href="contact.html"><h3>CONTACT</h3></a>
+          </div>
+        </div>
+      </div>
 
-				<div class="slide">
-					<div class="text">
-						<h3>Wireless Speaker</h3>
-						<p class="text">Here is a wireless speaker I made in Mechatronics. The assignment was to created an speaker that would play a certain range of notes when wireless commands were received. The goal was to bring every speaker together to create a digital orchestra. My speaker was a soprano. The notes were played through the speaker by creating them by filter PWM output of a microcontroller. I coded the microcontroller to output a varying PWM signal that was then sent through a bandpass filter to smooth it into a nice Sine wave. One of my proudest moments in this project occurred while calibrating the frequency of the notes. I plotted the output frequency versus the PWM setting and found that there was an inverse relationship between the two. I was then about to accurately fit a function to the relationship. This allowed the speaker to play a the full variety of frequencies accurately. We also had to design the housing of the speaker. I wanted to test what’s called a living hinge. You can cut 2D material in such a way so that it will bend. I was very pleased with the results.</p>
-					</div>
-					<div class="media">
-						<div class="picture-one active-picture">
-							<!-- <div class="left-arrow"><p><</p></div> -->
-							<div class="right-arrow-one"><p>></p></div>
-							<div class="picOne"></div>
-						</div>
-						<div class="picture-one">
-							<!-- <div class="left-arrow"><p><</p></div> -->
-							<div class="right-arrow-one"><p>></p></div>
-							<div class="picTwo"></div>
-						</div>
-						<div class="picture-one">
-							<!-- <div class="left-arrow"><p><</p></div> -->
-							<div class="right-arrow-one"><p>></p></div>
-							<div class="picThree"></div>
-						</div>
-						
+  	 <div class="wrapper">
 
-					</div>	
-				</div>
+       <div class="container-fluid">
+        <div class="row menuIcon menu-click">
+          <div class="col-sm-12">
+            <img src="menuIcon.png" height="35px" width="35px">
+          </div>
+        </div>
+       </div> 
 
-				<div class="slide">
-					<div class="text">
-						<h3>Digital Art</h3>
-						<p>Making digital art is one of my creative outlets. I recently got a tablet with an active digitizer stylus which really opens up a digital medium. With it I am able to take full advantage of Adobe Creative Suite. I look forward to gaining more experience digitally drawing in Photoshop and Illustrator. I like to make personalized wallpapers, both for my phone and my computer. Here are two examples of some phone wallpapers that I made.</p>
-					</div>
-					<div class="media">
-						<div class="picture-two-one">
-							<!-- <div class="left-arrow"><p><</p></div> -->
-							<div class="right-arrow-two"><p>></p></div>
-							<div class="picFour"></div>
-							<div class="picFive"></div>
-						</div>
-					</div>	
-				</div>
+      <div class="container-fluid about">
+        
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <h3>Projects</h3>
+          </div>
+          <div class="col-sm-5">
+            
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
 
-				<div class="slide">
-					<div class="text">
-						<h3>Cruise Control</h3>
-						<p>The first project in the second semester of my junior MEAM lab required you to build something with Arduino. This was quite fun having very little bounds and the ability to explore. My partner and I decided to make a remote controlled car that uses your iphone as the remote control. We used a Red Bear Labs Bluetooth Low Energy shield to connect the Arduino controlled car and the iPhone. The car was built from scrap parts leftover from Robockey. My partner Casey put together a simple iPhone app that allows you to control the speed with a slider bar (this varies the PWM output from the Arduino), toggle the headlights with the press of a button, and steer using the data from the iPhone’s gyroscope and converting it to varying PWM values to turn the two wheeled vehicle.</p>
-					</div>
-					<div class="media">
-						<iframe width="100%" height="80%" src="https://www.youtube-nocookie.com/embed/UF9QC6jVHeQ?rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
+        
+      </div>
 
-			</div>
-				
-			<div class="footer transparent slider-nav">
-				<a href="#" class="arrow-prev"><img src="arrow-prev.png"></a>
-			      <ul class="slider-dots">
-			        <li class="dot active-dot">&bull;</li>
-			        <li class="dot">&bull;</li>
-			        <li class="dot">&bull;</li>
-			        <li class="dot">&bull;</li>
-			        <li class="dot">&bull;</li>
-			        <li class="dot">&bull;</li>
-			      </ul>
-    			<a href="#" class="arrow-next"><img src="arrow-next.png"></a>
-			</div>
-			
-		</div>	
-			
+      <div class="container-fluid bottom">
+       <!--
+        <div class="row connect">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-1">
+            <h4>CONNECT</h4>
+          </div>
+          <div class="col-sm-1">
+            <img src="linkIn.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-1">
+            <img src="youtube.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-1">
+            <img src="facebook.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-4"></div>
+        </div>-->
+        
 
+        <div class="row watermark">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 border">
+            <h4>&copy 2015 STU HELGESON   |   ALL RIGHTS RESERVED</h4>
+          </div>
+          <div class="col-lg-4">
+            <h4>WEBSITE DESIGNED AND DEVELOPED BY STU HELGESON</h4>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div> 
 
+    </div>
+    <!--JavaScript, JQuery-->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="app.js"></script>
 
-	<!--JavaScript, JQuery-->
-		<script src="jquery-1.10.2.min.js"></script>
-	    <script src="app.js"></script>
-		
-	</body>
-</html>
+  </body>
+ </html>

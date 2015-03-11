@@ -1,63 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link href='style.css' rel='stylesheet'>
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-		<title>Stu Helgeson</title>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'> -->
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-	<body>
-		
-		<div class="menu">	
-			<div class="icon-close">
-				CLOSE<div></div>
-			</div>
-			<ul class = "list">
-				<li><a href="index.html" class="hover">Home</a><li>
-				<li><a href="about.html" class="hover">About</a><li>
-				<li><a href="projects.html" class="hover">Projects</a><li>
-				<li><a href="#" class="hover contact-click1">Contact</a><li>
-				<li><a href="StuHelgesonResume.pdf" target="_blank" class="hover">Resume</a><li>
-			</ul>
-		</div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-		<div class="contact-page">
-			<div class="contact-close hover"><div></div>CLOSE</div>
-			<div class="contact-content">
-			<p class="one">LET'S TALK!</p>
-			<p class="two"><a href="mailto:helgesonse@gmail.com?subject=STU HELGESON.COM INQUIRY" target="_blank">EMAIL</a></p>
-			<p class="two">PHONE: <a href="tel:717-371-8396">717-371-8396</a><p>
-			</div>
-		</div>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-			<div class="strip">
-				<div class="header">
-					<div class="left">
-						<div class="menuBars menu-click"></div><p class="menu-click hover">MENU</p><p class="contact hover contact-click2">CONTACT</p>
-					</div>
-					<div class="right">
-						<p><a href="index.html">STU HELGESON</a></p>
-					</div>
-				</div>
-				
-				
-					<div class="content transparent">
-							<h1 class="home top">ENGINEER</h1>
-							<h1 class="home">DESIGNER</h1>
-							<h1 class="home">THINKER</h1>
-					</div>
-				
-				
-			</div>	
-			
+  </head>
 
+  <body>
 
+      <div class="container-fluid menu">
+        <div class="row menuRow">
+          <div class="col-sm-2 close-click border">
+            <h3>CLOSE</h3>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="index.html"><h3>HOME</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="about.html"><h3>ABOUT</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="projects.html"><h3>PROJECTS</h3></a>
+          </div>
+          <div class="col-sm-2 navLink border">
+            <a href="StuHelgesonResume.pdf" target="_blank" class="hover"><h3>RESUME</h3></a>
+          </div>
+          <div class="col-sm-2 navLink">
+            <a href="contact.html"><h3>CONTACT</h3></a>
+          </div>
+        </div>
+      </div>
 
-		<!--JavaScript, JQuery-->
-		<script src="jquery-1.10.2.min.js"></script>
-	    <script src="app.js"></script>
-		
-	</body>
-</html>
+  	 <div class="wrapper">
+
+      <div class="container-fluid">
+        <div class="row menuIcon menu-click">
+          <div class="col-sm-12">
+            <img src="menuIcon.png" height="35px" width="35px">
+          </div>
+        </div>
+       </div> 
+
+      <div class="container-fluid header">
+        <div class="row headerimg">
+          <div class="col-md-12">
+          <!-- <img src="headerLogo.png" align="middle"> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 fadeOne">
+            <h3>DESIGNER</h3>
+          </div>
+          <div class="col-sm-4 fadeTwo">
+            <h3>ENGINEER</h3>
+          </div>
+          <div class="col-sm-4 fadeThree">
+            <h3>CREATOR</h3>
+          </div>
+        </div>
+      </div>
+    
+
+     <!--  <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>Welcome!</h4>
+            <p>Welcome to my home on the web. On this site you'll find out about myself. You will also see some of the work that I have done</p>
+          </div>
+        </div>
+      </div>-->
+
+      <div class="container-fluid bottom">
+
+        <div class="row">
+        	<div class="span-4"></div>
+        	<div class="col-mid-4">
+        		<h3>SITE UNDER CONSTRUCTION</h3>
+        	</div>
+        	<div class="span-4"></div>
+      	</div>
+        <!--
+        <div class="row connect">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-1">
+            <h4>CONNECT</h4>
+          </div>
+          <div class="col-sm-1">
+            <img src="linkIn.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-1">
+            <img src="youtube.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-1">
+            <img src="facebook.png" height="40px" width="40px">
+          </div>
+          <div class="col-sm-4"></div>
+        </div>-->
+        
+
+        <div class="row watermark">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 border">
+            <h4>&copy 2015 STU HELGESON   |   ALL RIGHTS RESERVED</h4>
+          </div>
+          <div class="col-lg-4">
+            <h4>WEBSITE DESIGNED AND DEVELOPED BY STU HELGESON</h4>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div> 
+
+    </div>
+    <!--JavaScript, JQuery-->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+ </html>
