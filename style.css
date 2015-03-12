@@ -137,3 +137,7 @@ body{
 	
 	border-top: 2px solid rgb(10,90,140);
 }
+
+.form-group{
+	padding-top: 15px;
+}
