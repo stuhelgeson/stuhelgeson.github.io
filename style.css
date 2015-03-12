@@ -141,3 +141,42 @@ body{
 .form-group{
 	padding-top: 15px;
 }
+
+.slide{
+	display: none;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.active-slide{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	display: block	
+}
+
+.slider-dots{
+  list-style: none;
+  display: inline-block;
+  padding: 0px;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.slider-dots li.active-dot {
+  color: rgb(10,90,140);
+}
+
+.outer{
+	width: 100%;
+}
+
+.inner{
+	width: 120px;
+	margin: 0 auto;
+}
