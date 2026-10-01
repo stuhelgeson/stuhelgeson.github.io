@@ -4,399 +4,239 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stu Helgeson — Mechanical Engineer</title>
-<meta name="description" content="Stu Helgeson is a mechanical engineer building consumer electronics, wearables, and connected devices.">
-<!--
-  stuhelgeson.com — minimal dark portfolio.
-  - Experience entries are from Stu's LinkedIn (screenshots he shared, 2026-09-30).
-  - Project copy is Stu's original write-up, word-for-word (typos fixed only).
-  - Contact form posts to Formspree endpoint https://formspree.io/f/xjykzzro.
-    No email address is exposed anywhere in this file.
-  - Logo: the ORIGINAL hexagon-h mark from stuhelgeson.com (images/logo3.png).
-    The mark is a lowercase "h" with an "S" in the negative space.
--->
+<meta name="description" content="Stu Helgeson is a mechanical engineer building consumer electronics, wearables, and connected devices — from first sketch to mass production.">
 <link rel="icon" href="favicon.ico">
-<style>
-  :root{
-    --bg:#0c0c0d; --panel:#141416; --ink:#f5f2ea; --muted:#a7a29a;
-    --gold:#c9a96a; --line:#26262a; --placeholder:#3a3a40;
-  }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  body{background:var(--bg); color:var(--ink);
-       font-family:Georgia,'Times New Roman',serif; line-height:1.7;}
-  a{color:var(--gold); text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  .wrap{max-width:860px; margin:0 auto; padding:0 24px;}
-
-  /* nav */
-  nav{position:sticky; top:0; z-index:10; background:rgba(12,12,13,.92);
-      backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
-  nav .wrap{display:flex; align-items:center; justify-content:space-between;
-            padding-top:14px; padding-bottom:14px;}
-  .brand{display:flex; align-items:center; gap:12px; color:var(--ink);}
-  .brand:hover{text-decoration:none;}
-  .brand svg, .brand img{height:36px; width:auto; display:block;}
-  .brand span{font-size:1.15rem; letter-spacing:.02em;}
-  .links{display:flex; gap:22px; font-size:.95rem;}
-  .links a{color:var(--muted);}
-  .links a:hover{color:var(--gold); text-decoration:none;}
-
-  /* hero */
-  header.hero{padding:110px 0 90px;}
-  .kicker{color:var(--gold); text-transform:uppercase; letter-spacing:.28em;
-          font-size:.8rem; margin-bottom:22px; font-family:Verdana,sans-serif;}
-  h1{font-size:clamp(2.6rem,6vw,4.2rem); line-height:1.12; font-weight:400;
-     margin-bottom:24px;}
-  .lede{color:var(--muted); font-size:1.2rem; max-width:620px;}
-
-  section{padding:70px 0; border-top:1px solid var(--line);}
-  h2{font-size:1.7rem; font-weight:400; margin-bottom:10px;}
-  .sec-sub{color:var(--muted); margin-bottom:34px; max-width:640px;}
-
-  /* experience */
-  .job{padding:26px 0; border-bottom:1px solid var(--line);}
-  .job:last-child{border-bottom:none;}
-  .job-head{display:flex; justify-content:space-between; align-items:baseline;
-            flex-wrap:wrap; gap:6px; margin-bottom:6px;}
-  .job-title{font-size:1.15rem;}
-  .job-org{color:var(--gold);}
-  .job-dates{color:var(--muted); font-size:.95rem; font-family:Verdana,sans-serif;}
-  .job p{color:var(--muted); max-width:660px; font-size:1.02rem;}
-
-  .patents{margin-top:40px;}
-  .patents h3{font-size:1.15rem; font-weight:400; margin-bottom:14px; color:var(--ink);}
-  .patent{padding:12px 0; border-bottom:1px solid var(--line); font-size:.98rem;}
-  .patent:last-child{border-bottom:none;}
-  .patent .pnum{color:var(--gold); font-family:Verdana,sans-serif; font-size:.85rem;
-                display:block; margin-bottom:2px;}
-  .patent span.ptitle{color:var(--muted);}
-
-  /* projects */
-  .project{background:var(--panel); border:1px solid var(--line);
-           border-radius:10px; overflow:hidden; margin-bottom:28px;}
-  .project img.thumb{width:100%; height:300px; object-fit:cover; display:block;
-                     border-bottom:1px solid var(--line);}
-  .project-body{padding:30px 32px;}
-  .project h3{font-size:1.35rem; font-weight:400; margin-bottom:4px;}
-  .project .tags{color:var(--gold); font-size:.85rem; letter-spacing:.12em;
-                 text-transform:uppercase; margin-bottom:14px;
-                 font-family:Verdana,sans-serif;}
-  .project h4{font-size:1.02rem; font-weight:400; color:var(--ink);
-              margin:16px 0 6px;}
-  .project h4 + p{margin-top:0;}
-  .project em{color:var(--muted);}
-  .project p{color:var(--muted); margin-bottom:12px; max-width:680px;}
-  .video{position:relative; padding-bottom:56.25%; height:0; margin:18px 0 6px;
-         border:1px solid var(--line); border-radius:6px; overflow:hidden;}
-  .video iframe{position:absolute; top:0; left:0; width:100%; height:100%; border:0;}
-
-  .archive{margin-top:44px;}
-  .archive h3{font-size:1.15rem; font-weight:400; margin-bottom:6px;}
-  .archive .sec-sub{margin-bottom:22px;}
-  .tile-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
-             gap:16px;}
-  .tile{background:var(--panel); border:1px solid var(--line); border-radius:8px;
-        overflow:hidden;}
-  .tile img{width:100%; height:110px; object-fit:cover; display:block;}
-  .tile span{display:block; padding:10px 12px; font-size:.88rem; color:var(--muted);
-             line-height:1.5;}
-  .tile strong{display:block; color:var(--ink); font-weight:400; font-size:.95rem;
-              margin-bottom:4px;}
-  .archive-video{margin:26px 0 6px;}
-
-  /* media placeholder (for future integration) */
-  .media-slot{border:1px dashed var(--placeholder); border-radius:8px;
-              padding:34px 20px; text-align:center; color:var(--muted);
-              font-size:.95rem; margin:18px 0; background:rgba(255,255,255,.015);}
-  .media-slot strong{color:var(--ink); font-weight:400; display:block; margin-bottom:4px;}
-
-  /* skills / interests */
-  .cols{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
-  @media(max-width:640px){.cols{grid-template-columns:1fr;}}
-  .col h3{font-size:.85rem; font-weight:400; color:var(--gold); margin-bottom:12px;
-          text-transform:uppercase; letter-spacing:.14em;
-          font-family:Verdana,sans-serif;}
-  .col ul{list-style:none;}
-  .col li{padding:9px 0; border-bottom:1px solid var(--line); color:var(--muted);}
-  .col li:last-child{border-bottom:none;}
-  .interests{display:flex; flex-wrap:wrap; gap:12px; margin-top:6px;}
-  .interests span{border:1px solid var(--line); border-radius:999px;
-                  padding:8px 18px; color:var(--muted); font-size:.95rem;}
-
-  /* contact */
-  .contact-box{background:var(--panel); border:1px solid var(--line);
-               border-radius:10px; padding:36px; margin-top:8px;}
-  .contact-box p{color:var(--muted); margin-bottom:24px; max-width:560px;}
-  form label{display:block; font-size:.9rem; color:var(--muted); margin:0 0 6px;
-             font-family:Verdana,sans-serif; letter-spacing:.04em;}
-  form input, form textarea{width:100%; background:var(--bg); color:var(--ink);
-             border:1px solid var(--line); border-radius:6px; padding:12px 14px;
-             font-size:1rem; font-family:Georgia,serif; margin-bottom:18px;}
-  form input:focus, form textarea:focus{outline:none; border-color:var(--gold);}
-  form textarea{min-height:140px; resize:vertical;}
-  form button{background:var(--gold); color:#0c0c0d; border:none; border-radius:6px;
-              padding:13px 34px; font-size:1rem; font-family:Georgia,serif;
-              cursor:pointer;}
-  form button:hover{opacity:.88;}
-  .form-note{display:none; margin-top:16px; color:var(--gold); font-size:.95rem;}
-  .socials{display:flex; gap:26px; margin-top:28px; font-size:1rem;}
-
-  footer{border-top:1px solid var(--line); padding:34px 0 46px; color:var(--muted);
-         font-size:.9rem;}
-  footer .wrap{display:flex; justify-content:space-between; align-items:center;
-               flex-wrap:wrap; gap:14px;}
-  footer .flinks{display:flex; gap:20px;}
-  @media(max-width:640px){
-    .links{display:none;}
-    header.hero{padding:70px 0 60px;}
-    .contact-box{padding:24px;}
-  }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
+<header class="site">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Stu Helgeson — home">
+    <a class="brand" href="index.html" aria-label="Stu Helgeson — home">
       <img src="images/logo3.png" alt="Stu Helgeson logo">
-      <span>Stu Helgeson</span>
     </a>
-    <div class="links">
+    <nav class="desk" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
       <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </div>
+      <a href="experience.html">Experience</a>
+      <a href="#contact" class="cta">Get in touch</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</nav>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="#work">Work</a>
+    <a href="#approach">Approach</a>
+    <a href="#about">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="#contact">Get in touch</a>
+  </nav>
+</header>
 
-<header class="hero" id="top">
+<section class="hero">
   <div class="wrap">
-    <div class="kicker">Mechanical Engineer</div>
-    <h1>Stu Helgeson</h1>
+    <div class="kicker">Stu Helgeson · Mechanical Engineer</div>
+    <h1>I build physical products, <span class="accent">from first sketch to mass production.</span></h1>
     <p class="lede">I design and build physical products — from wearables and connected
     home devices to medical devices. Mechanical engineering, from first sketch
     to mass production.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-solid" href="#work">See the work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+    <div class="cred-strip">
+      <div class="cred"><strong>Currently</strong>Product Design Engineer · Reality Labs (Meta) — neural band</div>
+      <div class="cred"><strong>Previously</strong>Bigfoot Biomedical · Comcast</div>
+      <div class="cred"><strong>Named on</strong>3 patents</div>
+    </div>
   </div>
-</header>
+</section>
 
 <div class="wrap">
 
-<section id="about">
-  <h2>About</h2>
-  <p class="sec-sub">Product Design Engineer at Reality Labs (Meta), working on the
-  neural band. B.S.E. &amp; M.S.E., Mechanical Engineering, University of Pennsylvania.
-  Based in New York, NY.</p>
-  <p style="color:var(--muted); max-width:660px;">I like owning the whole arc of a
-  product — concept, mechanism design, prototyping, DFM, and the factory floor.
-  Previously I led mechanical engineering on Bigfoot Unity, a smart insulin pen
-  system taken from prototype through FDA approval and commercial launch
-  (acquired by Abbott in 2023). Before that: Xfinity smart home and connectivity
-  hardware at Comcast. I'm named on patents covering consumer hardware and
-  medical device systems.</p>
-</section>
-
-<section id="experience">
-  <h2>Experience</h2>
-
-  <div class="job">
-    <div class="job-head">
-      <div><span class="job-title">Product Design Engineer, Reality Labs</span>
-      <span class="job-org"> · Meta</span></div>
-      <span class="job-dates">Nov 2021 – Present</span>
+<section class="block" id="approach">
+  <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">What I do</h2></div>
+  <p class="sec-sub">I like owning the whole arc of a product — concept, mechanism design,
+  prototyping, DFM, and the factory floor.</p>
+  <div class="cards3">
+    <div class="card">
+      <div class="step">PHASE 01</div>
+      <h3>Design</h3>
+      <ul>
+        <li>Mechanical design &amp; mechanism design</li>
+        <li>Design for manufacturing (DFM)</li>
+        <li>Tolerance analysis</li>
+      </ul>
     </div>
-    <p>Working on the neural band program at Reality Labs.</p>
-  </div>
-
-  <div class="job">
-    <div class="job-head">
-      <div><span class="job-title">Mechanical Engineer</span>
-      <span class="job-org"> · Bigfoot Biomedical</span></div>
-      <span class="job-dates">Jan 2019 – Nov 2021 · San Francisco Bay Area</span>
+    <div class="card">
+      <div class="step">PHASE 02</div>
+      <h3>Prototype</h3>
+      <ul>
+        <li>Rapid prototyping &amp; 3D printing</li>
+        <li>Test rigs &amp; bring-up</li>
+        <li>Looks-like / sounds-like builds</li>
+      </ul>
     </div>
-    <p>Lead mechanical engineer taking Bigfoot Unity — a smart insulin pen
-    management system — from early prototype build through EVT, DVT, FDA approval,
-    and commercial launch. The Bigfoot Unity business was acquired by Abbott in 2023.</p>
-  </div>
-
-  <div class="job">
-    <div class="job-head">
-      <div><span class="job-title">Product Design Engineering, Mechanical Engineer II</span>
-      <span class="job-org"> · Comcast</span></div>
-      <span class="job-dates">Feb 2017 – Jan 2019 · Philadelphia, PA</span>
-    </div>
-    <p>Designed, 3D-modeled, and prototyped devices across a diverse product line:
-    connected doorbell, keypad, camera, gateway, door/window sensors, home security
-    hub, set-top boxes, and WiFi extenders — plus the X1 voice remote program,
-    tens of millions of units shipped.</p>
-  </div>
-
-  <div class="job">
-    <div class="job-head">
-      <div><span class="job-title">Mechanical Engineering Intern</span>
-      <span class="job-org"> · Comcast</span></div>
-      <span class="job-dates">Summer 2016 · Philadelphia, PA</span>
-    </div>
-    <p>Summer internship on the hardware engineering team — returned full-time
-    after graduating that December.</p>
-  </div>
-
-  <div class="job">
-    <div class="job-head">
-      <div><span class="job-title">B.S.E. &amp; M.S.E., Mechanical Engineering</span>
-      <span class="job-org"> · University of Pennsylvania</span></div>
-      <span class="job-dates">2012 – 2016</span>
-    </div>
-    <p>Sub-matriculated into the master's program junior year. Captain, Penn Varsity
-    Sprint Football Team.</p>
-  </div>
-
-  <div class="patents">
-    <h3>Patents</h3>
-    <div class="patent">
-      <span class="pnum">US D926687 · Issued Aug 3, 2021</span>
-      <span class="ptitle">Rotating Ground Prong Anchor</span>
-    </div>
-    <div class="patent">
-      <span class="pnum">US 20220339367 A1 · Filed Apr 22, 2022</span>
-      <span class="ptitle">Insulin delivery and data collection systems and methods</span>
-    </div>
-    <div class="patent">
-      <span class="pnum">US 20220105282 A1 · Filed Sep 28, 2021</span>
-      <span class="ptitle">Injection site determination systems and methods</span>
+    <div class="card">
+      <div class="step">PHASE 03</div>
+      <h3>Produce</h3>
+      <ul>
+        <li>Consumer electronics enclosures</li>
+        <li>Factory liaison &amp; mass production</li>
+        <li>EVT → DVT → launch</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="projects">
-  <h2>Selected Projects</h2>
-  <p class="sec-sub">Professional work, latest first.
-  University projects are in the archive below.</p>
+<section class="block" id="work">
+  <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">Selected work</h2></div>
+  <p class="sec-sub">Professional work, latest first. University projects live in the archive below.</p>
 
-  <div class="project">
-    <img class="thumb" src="images/BrilliantPad-Project-Tile.jpg" alt="Brilliant Pad prototype" loading="lazy">
-    <div class="project-body">
-      <h3>Brilliant Pad</h3>
+  <div class="feature">
+    <img src="images/BrilliantPad-Project-Tile.jpg" alt="Brilliant Pad prototype" loading="lazy">
+    <div class="feature-body">
       <div class="tags">Product Design · Prototyping</div>
+      <h3>Brilliant Pad</h3>
       <p>Given the details of the device in the patent, I had to design and build a working prototype to demonstrate the feasibility of an automated house breaking pad dispenser. The project started with brainstorming ideas on a piece of paper, and grew into the fabrication of a functioning prototype. Along the way, I learned a ton, from figuring out what a microcontroller is to building molds and working with composites. It was by no means easy but a challenge I would accept again and again.</p>
       <p>This early stage prototype is the foundation for the commercial product Brilliant Pad.</p>
     </div>
   </div>
 
-  <div class="project">
-    <img class="thumb" src="images/XHome-Project-Tile.jpg" alt="xFinity Home products" loading="lazy">
-    <div class="project-body">
-      <h3>Smart Home — xFinity Home</h3>
+  <div class="workrow">
+    <div class="thumb"><img src="images/XHome-Project-Tile.jpg" alt="xFinity Home products" loading="lazy"></div>
+    <div class="workrow-body">
       <div class="tags">Consumer Electronics · Comcast</div>
-      <h4>Nightingale</h4>
+      <h3>Smart Home — xFinity Home</h3>
+      <h4>Nightingale <span class="status">Plan of record 2019</span></h4>
       <p>WiFi connected xFinity home doorbell. Integrates with the existing xFinity Home system. Allows for two way communication between the device and other devices; another doorbell, TV, home security tablet, voice remote.<br>
       <em>Status: Confidential Design. Plan of record 2019.</em></p>
-      <h4>Talon</h4>
+      <h4>Talon <span class="status">Concept</span></h4>
       <p>xFinity Home Security Keypad. Used to arm and disarm the xFinity Home Security and Automation System. The Talon adds a biometric sensor in an updated form factor to improve the user experience for arming and disarming their security system.<br>
       <em>Status: Confidential Design. Concept Product.</em></p>
-      <h4>Door Window Sensors</h4>
+      <h4>Door Window Sensors <span class="status">In development</span></h4>
       <p>Helped in the design of a new door window sensor with improved battery and wireless performance. Submitted a patent proposal for a new battery manufacturing method to reduce internal resistance of small form factor batteries. The solution increases battery life in cold weather conditions from existing battery designs. Built test rig to evaluate and test door window sensors. Wrote C code to repeatedly test the sensors in a window installation. The system allowed the tester to automate up and down motion to test the performance of a sensor. Challenges included reducing vibrational noise as to not interfere with accelerometer sensor readings.<br>
       <em>Status: Confidential Design. Ongoing development.</em></p>
     </div>
   </div>
 
-  <div class="project">
-    <img class="thumb" src="images/XFi-Project-Tile.jpg" alt="xFi WiFi products" loading="lazy">
-    <div class="project-body">
-      <h3>WiFi Products — xFi</h3>
+  <div class="workrow">
+    <div class="thumb"><img src="images/XFi-Project-Tile.jpg" alt="xFi WiFi products" loading="lazy"></div>
+    <div class="workrow-body">
       <div class="tags">Consumer Electronics · Comcast</div>
-      <h4>XFi Extender V2</h4>
+      <h3>WiFi Products — xFi</h3>
+      <h4>XFi Extender V2 <span class="status">In production · 2019</span></h4>
       <p>Version two of a pluggable WiFi extender for mesh networking: increased WiFi performance, updated form factor. Ran thermal simulations to define the minimum size that met performance specs for a wall outlet design. Worked with industrial design team to confirm the form factor size and geometry. Designed internal mountings and thermal management features. Worked in tandem with our board designers to create the board layout and stack up. Working with CMO partner in Taiwan to match our intended design and performance.<br>
       <em>Status: Confidential Design. In production. Release 2019.</em></p>
-      <h4>Jaguar</h4>
+      <h4>Jaguar <span class="status">Entering production</span></h4>
       <p>Concept product integrating whole home voice and audio with mesh networking capabilities. Ran thermal simulations to get an idea of the volume required for a successful product. Relayed information to the industrial design team to help create a working design. Created stack up from layouts from electrical engineers. Ran thermal simulations to confirm final design. Took the industrial design volume CAD and split the part and added internal details for the looks-like/sounds-like prototype. Worked with a prototyping company to manufacture the prototype.<br>
       <em>Status: Confidential Design. Entering production. Plan of record 2019.</em></p>
     </div>
   </div>
 
-  <div class="project">
-    <img class="thumb" src="images/X1-Project-Tile.jpg" alt="xFinity TV products" loading="lazy">
-    <div class="project-body">
-      <h3>TV Products — xFinity</h3>
+  <div class="workrow">
+    <div class="thumb"><img src="images/X1-Project-Tile.jpg" alt="xFinity TV products" loading="lazy"></div>
+    <div class="workrow-body">
       <div class="tags">Consumer Electronics · Comcast</div>
-      <h4>xFinity Voice Remotes</h4>
+      <h3>TV Products — xFinity</h3>
+      <h4>xFinity Voice Remotes <span class="status">Concept</span></h4>
       <p>Prototyped a portable battery base for the new always-on voice remote. Modified CAD design to attach to the remote with no design modifications to the device. Utilized a friction fit and magnets to securely attach the battery base. Designed features to contain the PCB and lithium ion battery.<br>
       <em>Status: Confidential Design. Product Concept.</em></p>
-      <h4>xFinity Coaxial Connector</h4>
+      <h4>xFinity Coaxial Connector <span class="status">Patent submitted</span></h4>
       <p>Developed a design to improve the customer experience for attaching a coaxial cable to a device. The mechanism slides over the F-style connector and cinches down with a quarter turn, providing auditory feedback and locking the cable to the device. Patent submitted.<br>
       <em>Status: Confidential Design. Product Concept.</em></p>
     </div>
   </div>
+</section>
 
-  <div class="archive">
-    <h3>University archive</h3>
-    <p class="sec-sub">School projects from Penn — classes, labs, and research.</p>
-    <div class="tile-grid">
-      <div class="tile"><img src="images/Pixel-Project-Tile.jpg" alt="Pixel" loading="lazy"><span><strong>Pixel</strong>In my Smart Objects: Toy design class, Eddie Cohen and I created a wearable that lets kids merge digital and physical games — a versatile wearable for developing their own tag style games.</span></div>
-      <div class="tile"><img src="images/Robockey-Project-Tile.jpg" alt="Robockey" loading="lazy"><span><strong>Robockey</strong>Final project in my Mechatronics class: an autonomous team of hockey-playing robots, designed and built from scratch in three weeks.</span></div>
-      <div class="tile"><img src="images/Speaker-Project-Tile.jpg" alt="Speaker" loading="lazy"><span><strong>Speaker</strong>The orchestra project for my mechatronics class: learned to filter and amplify signals to play tones, housed in a laser-cut living-hinge MDF enclosure.</span></div>
-      <div class="tile"><img src="images/Cruise-Control-Project-Tile.jpg" alt="Cruise Control" loading="lazy"><span><strong>Cruise Control</strong>First project in my junior MEAM lab: a remote controlled car driven by an iPhone over Bluetooth, built from scrap parts leftover from Robockey.</span></div>
-      <div class="tile"><img src="images/OTRB-Project-Tile.jpg" alt="OTRB" loading="lazy"><span><strong>OTRB</strong>A project from my controls class: a servo-driven frame balancing a ping pong ball, guided by a Pixie camera and a PID controller.</span></div>
-      <div class="tile"><img src="images/Light-Paint-Robot-Project-T.jpg" alt="Light Painting" loading="lazy"><span><strong>Light Painting</strong>In my Intro to Robotics, we used a robot to make a light painting photograph. We used a modified industrial Puma 260 robot. There were several steps to this project. First was to find the DH parameters of the RRR robot. Next we had to find the inverse kinematics for the Puma. After testing our IK solutions, our team created a set of points for the Puma to &ldquo;paint&rdquo;. We chose a scene from Space Invaders.</span></div>
-      <div class="tile"><img src="images/Proton-Project-Tile.jpg" alt="Proton" loading="lazy"><span><strong>Proton</strong>As a member of the Haptics Lab at Penn, worked with Alex Burka to develop a portable haptic and visual data collection device, with a research team at Cal Berkeley.</span></div>
+<section class="block" id="archive">
+  <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">University archive</h2></div>
+  <p class="sec-sub">School projects from Penn — classes, labs, and research.</p>
+  <details class="archive">
+    <summary>
+      <div>
+        <h3>Seven projects, 2012–2016</h3>
+        <p>Mechatronics, robotics, controls, haptics — click to expand.</p>
+      </div>
+      <span class="plus" aria-hidden="true">+</span>
+    </summary>
+    <div class="archive-inner">
+      <div class="tile-grid">
+        <div class="tile"><img src="images/Pixel-Project-Tile.jpg" alt="Pixel" loading="lazy"><div><strong>Pixel</strong><p>In my Smart Objects: Toy design class, Eddie Cohen and I created a wearable that lets kids merge digital and physical games — a versatile wearable for developing their own tag style games.</p></div></div>
+        <div class="tile"><img src="images/Robockey-Project-Tile.jpg" alt="Robockey" loading="lazy"><div><strong>Robockey</strong><p>Final project in my Mechatronics class: an autonomous team of hockey-playing robots, designed and built from scratch in three weeks.</p></div></div>
+        <div class="tile"><img src="images/Speaker-Project-Tile.jpg" alt="Speaker" loading="lazy"><div><strong>Speaker</strong><p>The orchestra project for my mechatronics class: learned to filter and amplify signals to play tones, housed in a laser-cut living-hinge MDF enclosure.</p></div></div>
+        <div class="tile"><img src="images/Cruise-Control-Project-Tile.jpg" alt="Cruise Control" loading="lazy"><div><strong>Cruise Control</strong><p>First project in my junior MEAM lab: a remote controlled car driven by an iPhone over Bluetooth, built from scrap parts leftover from Robockey.</p></div></div>
+        <div class="tile"><img src="images/OTRB-Project-Tile.jpg" alt="OTRB" loading="lazy"><div><strong>OTRB</strong><p>A project from my controls class: a servo-driven frame balancing a ping pong ball, guided by a Pixie camera and a PID controller.</p></div></div>
+        <div class="tile"><img src="images/Light-Paint-Robot-Project-T.jpg" alt="Light Painting" loading="lazy"><div><strong>Light Painting</strong><p>In my Intro to Robotics, we used a robot to make a light painting photograph. We used a modified industrial Puma 260 robot. There were several steps to this project. First was to find the DH parameters of the RRR robot. Next we had to find the inverse kinematics for the Puma. After testing our IK solutions, our team created a set of points for the Puma to &ldquo;paint&rdquo;. We chose a scene from Space Invaders.</p></div></div>
+        <div class="tile"><img src="images/Proton-Project-Tile.jpg" alt="Proton" loading="lazy"><div><strong>Proton</strong><p>As a member of the Haptics Lab at Penn, worked with Alex Burka to develop a portable haptic and visual data collection device, with a research team at Cal Berkeley.</p></div></div>
+      </div>
+      <div class="archive-video">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/Gd3KZLFi2xU" title="Pixel wearable video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
-    <div class="video archive-video">
-      <iframe src="https://www.youtube.com/embed/Gd3KZLFi2xU" title="Pixel wearable video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen loading="lazy"></iframe>
+  </details>
+</section>
+
+<section class="block" id="about">
+  <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">About</h2></div>
+  <p class="sec-sub">Product Design Engineer at Reality Labs (Meta), working on the neural band.
+  B.S.E. &amp; M.S.E., Mechanical Engineering, University of Pennsylvania. Based in New York, NY.</p>
+  <div class="about-grid">
+    <div>
+      <p>I like owning the whole arc of a product — <strong>concept, mechanism design,
+      prototyping, DFM, and the factory floor</strong>.</p>
+      <p>Previously I led mechanical engineering on <strong>Bigfoot Unity</strong>, a smart
+      insulin pen system taken from prototype through FDA approval and commercial launch
+      (acquired by Abbott in 2023). Before that: <strong>Xfinity smart home and connectivity
+      hardware</strong> at Comcast. I'm named on patents covering consumer hardware and
+      medical device systems.</p>
+      <div class="interests">
+        <span>🏔️ Mountaineering</span>
+        <span>🚴 Cycling</span>
+        <span>⛷️ Skiing</span>
+        <span>🤖 Robotics</span>
+      </div>
     </div>
-    <!-- Future project gallery slot: add <img> or video embeds here. -->
+    <div class="factbox">
+      <h3>At a glance</h3>
+      <div class="fact"><span>Role</span><span>Product Design Engineer</span></div>
+      <div class="fact"><span>Team</span><span>Reality Labs · Meta</span></div>
+      <div class="fact"><span>Focus</span><span>Neural band</span></div>
+      <div class="fact"><span>Education</span><span>B.S.E. &amp; M.S.E., Penn</span></div>
+      <div class="fact"><span>Location</span><span>New York, NY</span></div>
+      <div class="fact"><span>Patents</span><span>3 issued / filed</span></div>
+    </div>
   </div>
 </section>
 
-<section id="skills">
-  <h2>Skills &amp; Interests</h2>
-  <p class="sec-sub">The toolkit, and what I do when I'm not engineering.</p>
-  <div class="cols">
-    <div class="col">
-      <h3>Engineering</h3>
-      <ul>
-        <li>Mechanical design &amp; mechanism design</li>
-        <li>Design for manufacturing (DFM)</li>
-        <li>Rapid prototyping &amp; 3D printing</li>
-        <li>Tolerance analysis</li>
-        <li>Consumer electronics enclosures</li>
-        <li>Factory liaison &amp; mass production</li>
-      </ul>
+<section class="block" id="contact" style="border-bottom:none;">
+  <div class="contact-grid">
+    <div>
+      <div class="sec-head"><span class="sec-num">05</span><h2 class="sec-title">Get in touch</h2></div>
+      <p class="sec-sub">Have a project, a role, or just a mechanism you're excited about? Send a
+      note — I read everything.</p>
     </div>
-    <div class="col">
-      <h3>Tools</h3>
-      <ul>
-        <li>SolidWorks</li>
-      </ul>
+    <div class="contact-box">
+      <form id="contact-form" action="https://formspree.io/f/xjykzzro" method="POST">
+        <label for="cf-name">Name</label>
+        <input id="cf-name" name="name" type="text" required autocomplete="name">
+        <label for="cf-email">Email</label>
+        <input id="cf-email" name="email" type="email" required autocomplete="email">
+        <label for="cf-msg">Message</label>
+        <textarea id="cf-msg" name="message" required></textarea>
+        <button type="submit">Send message</button>
+        <p class="form-note" id="form-note"></p>
+      </form>
     </div>
-  </div>
-  <div class="interests" style="margin-top:30px;">
-    <span>🏔️ Mountaineering</span>
-    <span>🚴 Cycling</span>
-    <span>⛷️ Skiing</span>
-    <span>🤖 Robotics</span>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Get in touch</h2>
-  <div class="contact-box">
-    <p>Have a project, a role, or just a mechanism you're excited about? Send a
-    note — I read everything.</p>
-    <!-- Contact form: Formspree endpoint configured. No email address is
-         exposed anywhere in this file. -->
-    <form id="contact-form" action="https://formspree.io/f/xjykzzro" method="POST">
-      <label for="cf-name">Name</label>
-      <input id="cf-name" name="name" type="text" required autocomplete="name">
-      <label for="cf-email">Email</label>
-      <input id="cf-email" name="email" type="email" required autocomplete="email">
-      <label for="cf-msg">Message</label>
-      <textarea id="cf-msg" name="message" required></textarea>
-      <button type="submit">Send message</button>
-      <p class="form-note" id="form-note"></p>
-    </form>
   </div>
 </section>
 
@@ -404,7 +244,7 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Stu Helgeson · New York, NY</span>
+    <span class="fmeta">© 2026 STU HELGESON · NEW YORK, NY</span>
     <div class="flinks">
       <a href="https://www.linkedin.com/in/stuart-helgeson">LinkedIn</a>
       <a href="https://www.youtube.com/channel/UC4stD1KvCfo80HtZ6TO_C7Q">YouTube</a>
@@ -413,20 +253,29 @@
 </footer>
 
 <script>
-  // Contact form: submits via AJAX to Formspree and shows an inline status.
-  // Until a real Formspree endpoint is configured (action still contains
-  // YOUR_FORM_ID), submissions are blocked and a note is shown instead.
+  // Mobile menu
+  (function(){
+    var btn = document.getElementById('menu-btn');
+    var nav = document.getElementById('mobile-nav');
+    btn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+
+  // Contact form: AJAX submit to Formspree, inline status. No email exposed.
   document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
     var form = this;
     var note = document.getElementById('form-note');
-    if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
-      e.preventDefault();
-      note.textContent = 'The contact form goes live with the new site — ' +
-        'for now, reach Stu through LinkedIn below.';
-      note.style.display = 'block';
-      return;
-    }
-    e.preventDefault();
     var btn = form.querySelector('button[type="submit"]');
     btn.disabled = true;
     btn.textContent = 'Sending…';
@@ -443,8 +292,7 @@
     }).catch(function () {
       btn.disabled = false;
       btn.textContent = 'Send message';
-      note.textContent = 'Something went wrong sending your message — please try ' +
-        'again, or reach Stu through LinkedIn below.';
+      note.textContent = 'Something went wrong sending your message — please try again.';
       note.style.display = 'block';
     });
   });
